@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vrishya Venture | Investment Banking Advisory</title>
+  <meta name="description" content="Vrishya Venture is an emerging investment banking advisory firm focused on M&A, IPO, debt funding, private equity, and venture capital advisory." />
+  <meta property="og:title" content="Vrishya Venture | Investment Banking Advisory" />
+  <meta property="og:description" content="A refined, professional website for an emerging investment banking advisory firm." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.2rem, 1.2rem + 3vw, 4.8rem);
+      --text-hero: clamp(3rem, 1rem + 6vw, 7rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --color-bg: #07162b;
+      --color-surface: #0b1d37;
+      --color-surface-2: #112647;
+      --color-surface-offset: #142d54;
+      --color-surface-offset-2: #19355f;
+      --color-divider: rgba(215, 173, 92, 0.18);
+      --color-border: rgba(215, 173, 92, 0.22);
+      --color-text: #f7f2e8;
+      --color-text-muted: #c7c2b6;
+      --color-text-faint: #90897b;
+      --color-text-inverse: #08111f;
+      --color-primary: #d7ad5c;
+      --color-primary-hover: #e4be75;
+      --color-primary-active: #b78833;
+      --color-primary-highlight: rgba(215, 173, 92, 0.14);
+      --radius-sm: 0.375rem; --radius-md: 0.75rem; --radius-lg: 1.1rem; --radius-xl: 1.5rem; --radius-full: 9999px;
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.22);
+      --shadow-md: 0 16px 40px rgba(0,0,0,.28);
+      --shadow-lg: 0 28px 80px rgba(0,0,0,.4);
+      --content-default: 1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100dvh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top right, rgba(215,173,92,.14), transparent 26%),
+        radial-gradient(circle at 12% 20%, rgba(215,173,92,.08), transparent 22%),
+        linear-gradient(180deg, #061120 0%, #081729 40%, #07162b 100%);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; border: 0; cursor: pointer; }
+    .container { width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto; }
+    .section { padding: clamp(var(--space-16), 8vw, var(--space-24)) 0; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: var(--space-3); padding: 0.45rem 0.85rem;
+      border: 1px solid var(--color-border); border-radius: var(--radius-full); background: rgba(255,255,255,0.02);
+      color: var(--color-primary); text-transform: uppercase; letter-spacing: .16em; font-size: var(--text-xs);
+    }
+    .eyebrow::before { content: ''; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-primary); box-shadow: 0 0 18px rgba(215,173,92,.65); }
+    .header {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(18px);
+      background: rgba(7, 22, 43, 0.76); border-bottom: 1px solid rgba(215,173,92,0.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 80px; gap: var(--space-4); }
+    .brand { display: inline-flex; align-items: center; gap: var(--space-3); font-weight: 700; letter-spacing: .04em; }
+    .brand-mark {
+      width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(215,173,92,.35);
+      display: grid; place-items: center; background: linear-gradient(135deg, rgba(215,173,92,.18), rgba(215,173,92,.05));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 8px 24px rgba(0,0,0,.24);
+    }
+    .brand svg { color: var(--color-primary); }
+    .nav-links { display: flex; gap: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--color-primary); }
+    .cta-button, .secondary-button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 1.15rem; border-radius: var(--radius-full);
+      transition: transform var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), color var(--transition-interactive);
+    }
+    .cta-button {
+      background: linear-gradient(135deg, #e4be75, #c8953c); color: var(--color-text-inverse); font-weight: 700;
+      box-shadow: 0 16px 40px rgba(215,173,92,.16);
+    }
+    .cta-button:hover, .cta-button:focus-visible { transform: translateY(-2px); }
+    .secondary-button {
+      border: 1px solid var(--color-border); color: var(--color-text); background: rgba(255,255,255,.02);
+    }
+    .secondary-button:hover, .secondary-button:focus-visible { border-color: rgba(215,173,92,.48); color: var(--color-primary); }
+    .hero { padding: clamp(var(--space-16), 10vw, var(--space-32)) 0 clamp(var(--space-12), 8vw, var(--space-24)); }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: var(--space-12); align-items: center; }
+    .hero h1 {
+      font-family: var(--font-display); font-size: var(--text-hero); line-height: .95; letter-spacing: -.03em; max-width: 11ch;
+      margin: var(--space-5) 0 var(--space-6);
+    }
+    .hero p { max-width: 60ch; color: var(--color-text-muted); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-8); }
+    .hero-points { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-8); color: var(--color-text-muted); }
+    .hero-points span { display: inline-flex; align-items: center; gap: .55rem; }
+    .hero-points span::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary); }
+    .hero-card {
+      position: relative; overflow: hidden; padding: var(--space-8); border-radius: 28px;
+      background: linear-gradient(180deg, rgba(17,38,71,.94), rgba(8,19,36,.98)); border: 1px solid rgba(215,173,92,.16);
+      box-shadow: var(--shadow-lg);
+      min-height: 580px;
+    }
+    .hero-card::before {
+      content: ''; position: absolute; inset: 0; background:
+        linear-gradient(150deg, rgba(215,173,92,.24), transparent 28%),
+        radial-gradient(circle at 80% 16%, rgba(215,173,92,.18), transparent 20%),
+        linear-gradient(180deg, transparent, rgba(255,255,255,.02));
+      pointer-events: none;
+    }
+    .hero-stat-grid { position: relative; display: grid; gap: var(--space-4); }
+    .hero-stat, .service-card, .feature-card, .timeline-card, .contact-card {
+      border: 1px solid rgba(215,173,92,.12); background: rgba(255,255,255,.03); backdrop-filter: blur(8px);
+      border-radius: 24px; box-shadow: var(--shadow-md);
+    }
+    .hero-stat { padding: var(--space-5); }
+    .hero-stat strong { display: block; font-size: var(--text-xl); color: var(--color-primary); font-weight: 700; }
+    .hero-stat small { color: var(--color-text-faint); text-transform: uppercase; letter-spacing: .14em; }
+    .hero-stat p { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+    .section-head { display: grid; gap: var(--space-4); margin-bottom: var(--space-10); }
+    .section-head h2 { font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1; }
+    .section-head p { color: var(--color-text-muted); max-width: 68ch; }
+    .service-card, .feature-card, .timeline-card, .contact-card { padding: var(--space-6); }
+    .service-card h3, .feature-card h3, .timeline-card h3, .contact-card h3 { font-size: var(--text-lg); margin-bottom: var(--space-3); }
+    .service-card p, .feature-card p, .timeline-card p, .contact-card p { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .service-icon, .feature-icon {
+      width: 52px; height: 52px; display: grid; place-items: center; border-radius: 16px; margin-bottom: var(--space-5);
+      background: rgba(215,173,92,.1); border: 1px solid rgba(215,173,92,.18); color: var(--color-primary);
+    }
+    .showcase {
+      display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--space-8); align-items: stretch;
+    }
+    .showcase-panel {
+      padding: clamp(var(--space-8), 4vw, var(--space-12)); border-radius: 30px; background:
+      linear-gradient(135deg, rgba(215,173,92,.12), rgba(215,173,92,.02) 48%),
+      linear-gradient(180deg, rgba(20,45,84,.92), rgba(8,19,36,.98));
+      border: 1px solid rgba(215,173,92,.16); box-shadow: var(--shadow-lg);
+    }
+    .showcase-panel h3 { font-family: var(--font-display); font-size: clamp(2rem, 2vw, 3rem); line-height: 1.05; margin-bottom: var(--space-4); }
+    .showcase-panel p { color: var(--color-text-muted); max-width: 55ch; }
+    .check-list { list-style: none; display: grid; gap: var(--space-4); margin-top: var(--space-8); }
+    .check-list li { display: flex; gap: var(--space-3); color: var(--color-text-muted); }
+    .check-list li::before { content: '✦'; color: var(--color-primary); font-size: 1rem; line-height: 1.3; }
+    .metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-8); }
+    .metric-box { padding: var(--space-5); border-radius: 22px; border: 1px solid rgba(215,173,92,.12); background: rgba(255,255,255,.03); }
+    .metric-box strong { display: block; font-size: clamp(1.7rem, 2vw, 2.8rem); color: var(--color-primary); }
+    .metric-box span { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+    .timeline-card span {
+      display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid rgba(215,173,92,.22); color: var(--color-primary); margin-bottom: var(--space-4); font-weight: 700;
+    }
+    .contact-wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--space-8); align-items: stretch; }
+    .contact-card ul { list-style: none; display: grid; gap: var(--space-4); margin-top: var(--space-6); color: var(--color-text-muted); }
+    .contact-card li strong { color: var(--color-text); display: block; margin-bottom: 0.2rem; }
+    .contact-form { display: grid; gap: var(--space-4); }
+    .contact-form label { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .field {
+      width: 100%; margin-top: .45rem; padding: 0.95rem 1rem; border-radius: 16px; background: rgba(255,255,255,.03);
+      border: 1px solid rgba(215,173,92,.12); color: var(--color-text); min-height: 52px;
+    }
+    textarea.field { min-height: 130px; resize: vertical; }
+    .field:focus-visible { outline: 2px solid rgba(215,173,92,.46); outline-offset: 2px; }
+    .footer { padding: var(--space-8) 0 var(--space-10); border-top: 1px solid rgba(215,173,92,.1); color: var(--color-text-faint); }
+    .footer-row { display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; }
+    .gold-line { width: 120px; height: 1px; margin: var(--space-6) 0; background: linear-gradient(90deg, transparent, rgba(215,173,92,.8), transparent); }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s ease; }
+    .fade-up.is-visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .hero-grid, .showcase, .contact-wrap, .grid-3, .timeline { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .hero-card { min-height: auto; }
+    }
+    @media (max-width: 640px) {
+      .nav { min-height: 72px; }
+      .hero h1 { max-width: 9ch; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .metrics { grid-template-columns: 1fr; }
+      .section { padding: var(--space-16) 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .fade-up { opacity: 1; transform: none; transition: none; }
+      .cta-button:hover, .cta-button:focus-visible { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Vrishya Venture home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 17 10.5 6 14 12l2-3 4 8"/>
+            <path d="M4 17h16"/>
+          </svg>
+        </span>
+        <span>VRISHYA VENTURE</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta-button" href="#contact">Schedule an Intro Call</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="fade-up">
+          <span class="eyebrow">Emerging Investment Banking Advisory</span>
+          <h1>Strategic capital advice with a sharp institutional edge.</h1>
+          <p>Vrishya Venture is an emerging investment banking advisory platform positioned to support founders, business owners, and growth-stage companies with M&amp;A, IPO, debt funding, private equity, and venture capital guidance delivered through disciplined advisory thinking.</p>
+          <div class="hero-actions">
+            <a class="cta-button" href="#contact">Start a conversation</a>
+            <a class="secondary-button" href="#services">Explore our focus areas</a>
+          </div>
+          <div class="hero-points" aria-label="Firm highlights">
+            <span>M&amp;A and capital advisory</span>
+            <span>Professional process orientation</span>
+            <span>Founder-led client relationships</span>
+          </div>
+        </div>
+        <aside class="hero-card fade-up" aria-label="Firm overview highlights">
+          <div class="hero-stat-grid">
+            <div class="hero-stat">
+              <small>Positioning</small>
+              <strong>Independent</strong>
+              <p>Focused on thoughtful advisory support, credible preparation, and institutional-quality presentation for emerging businesses.</p>
+            </div>
+            <div class="hero-stat">
+              <small>Capabilities</small>
+              <strong>M&amp;A. IPO. Capital.</strong>
+              <p>From M&amp;A preparation to IPO readiness and capital advisory, the website presents Vrishya Venture as disciplined, client-ready, and serious from day one.</p>
+            </div>
+            <div class="hero-stat">
+              <small>Client fit</small>
+              <strong>Promoters &amp; Growth Companies</strong>
+              <p>Ideal for businesses seeking strategic guidance, investor communication support, and a polished advisory partner as they prepare for important capital opportunities.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Core Services</span>
+          <h2>Focused advisory mandates with a strong professional image.</h2>
+          <p>The website highlights clear service lines so Vrishya Venture can communicate expertise in corporate finance areas without relying on exaggerated claims.</p>
+        </div>
+        <div class="grid-3">
+          <article class="service-card fade-up">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16"/><path d="M7 16V8"/><path d="M12 16V5"/><path d="M17 16v-4"/></svg>
+            </div>
+            <h3>M&amp;A Advisory</h3>
+            <p>Supporting business owners and promoters with strategic sell-side and buy-side thinking, transaction preparation, and sharper presentation for serious discussions.</p>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18"/><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/></svg>
+            </div>
+            <h3>IPO &amp; Capital Markets Readiness</h3>
+            <p>Helping companies prepare for public-market journeys with stronger equity stories, investor-facing materials, and structured readiness support.</p>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18"/><path d="M5 8c0-2 2.2-3 4.5-3h5"/><path d="M19 16c0 2-2.2 3-4.5 3H9"/></svg>
+            </div>
+            <h3>Debt, PE &amp; VC Advisory</h3>
+            <p>Advising on debt funding, private equity, and venture capital positioning through disciplined communication, preparation, and opportunity assessment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container showcase">
+        <div class="showcase-panel fade-up">
+          <span class="eyebrow">Our Approach</span>
+          <h3>A young firm can still look institutional.</h3>
+          <p>The strongest early-stage advisory brands do not overstate experience. They present a clear point of view, polished communication, and a disciplined client process that signals seriousness to founders, investors, and counterparties.</p>
+          <div class="gold-line"></div>
+          <ul class="check-list">
+            <li>Clear messaging that avoids exaggerated claims and builds trust through precision.</li>
+            <li>Professional visual identity using navy blue for authority and gold for premium positioning.</li>
+            <li>A refined structure that highlights mandate readiness, confidentiality, and founder partnership.</li>
+          </ul>
+        </div>
+        <div class="showcase-panel fade-up">
+          <span class="eyebrow">Brand Signal</span>
+          <h3>Designed to stand out in a conservative industry.</h3>
+          <p>The visual system balances premium energy with corporate discipline, using elegant typography, layered panels, and restrained gold highlights instead of loud effects. That makes the site eye-catching while keeping it suitable for investment banking conversations.</p>
+          <div class="metrics" aria-label="Brand metrics presentation">
+            <div class="metric-box"><strong>01</strong><span>Focused primary call to action</span></div>
+            <div class="metric-box"><strong>02</strong><span>High-trust service presentation</span></div>
+            <div class="metric-box"><strong>03</strong><span>Premium navy and gold palette</span></div>
+            <div class="metric-box"><strong>04</strong><span>Mobile-ready professional layout</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Why Vrishya Venture</span>
+          <h2>Credibility built through clarity, discretion, and focus.</h2>
+          <p>A new advisory platform needs to win confidence through presentation, integrity, and strong communication. This website positions Vrishya Venture exactly that way.</p>
+        </div>
+        <div class="grid-3">
+          <article class="feature-card fade-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/></svg>
+            </div>
+            <h3>Trust-first language</h3>
+            <p>The content avoids unsupported transaction history and instead focuses on mandate clarity, confidentiality, and disciplined advisory intent.</p>
+          </article>
+          <article class="feature-card fade-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-8"/><path d="M22 20H2"/></svg>
+            </div>
+            <h3>Institutional tone</h3>
+            <p>Typography, spacing, and page structure echo premium corporate finance websites, helping the brand feel established even at launch.</p>
+          </article>
+          <article class="feature-card fade-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6v12"/><path d="M6 12h12"/><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+            <h3>Growth-ready foundation</h3>
+            <p>The site structure makes it easy to later add transactions, mandates, team profiles, sector coverage, and thought leadership as the firm grows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">How Engagement Starts</span>
+          <h2>A simple three-step pathway to begin advisory conversations.</h2>
+          <p>For a new advisory platform, a clean engagement framework signals maturity and helps prospects understand what happens next.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card fade-up">
+            <span>1</span>
+            <h3>Initial discussion</h3>
+            <p>A discovery conversation to understand the company, promoters, capital goals, and whether the focus is M&amp;A, IPO, debt, PE, or VC.</p>
+          </article>
+          <article class="timeline-card fade-up">
+            <span>2</span>
+            <h3>Strategic assessment</h3>
+            <p>Reviewing readiness, financial communication, investor positioning, and what materials or preparation would strengthen the process.</p>
+          </article>
+          <article class="timeline-card fade-up">
+            <span>3</span>
+            <h3>Execution roadmap</h3>
+            <p>Defining the advisory scope, information requirements, communication cadence, and next actions for a disciplined process.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-card fade-up">
+          <span class="eyebrow">Contact</span>
+          <h2 style="font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1; margin: var(--space-4) 0 var(--space-5);">Let the first impression match the ambition.</h2>
+          <p>This section has been updated with your provided business identity and email details.</p>
+          <ul>
+            <li><strong>Email</strong><a href="mailto:krishshah29082005@gmail.com">krishshah29082005@gmail.com</a></li>
+            <li><strong>Contact Person</strong>Krish Shah</li>
+            <li><strong>Company</strong>Vrishya Venture</li>
+          </ul>
+        </div>
+        <div class="contact-card fade-up">
+          <h3>Request an introduction</h3>
+          <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thank you. Your enquiry draft has been noted. Connect this form to email or a backend before going live.');">
+            <label>Name
+              <input class="field" type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <label>Email
+              <input class="field" type="email" name="email" placeholder="name@company.com" required>
+            </label>
+            <label>Company
+              <input class="field" type="text" name="company" placeholder="Company name">
+            </label>
+            <label>Message
+              <textarea class="field" name="message" placeholder="Tell us whether you are exploring M&amp;A, IPO, debt funding, private equity, or venture capital support." required></textarea>
+            </label>
+            <button class="cta-button" type="submit">Send enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© 2026 Vrishya Venture. All rights reserved.</p>
+      <p>Investment banking advisory website concept designed for a new firm launch.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.16 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
